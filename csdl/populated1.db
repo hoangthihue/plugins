@@ -1,0 +1,16 @@
+BEGIN TRANSACTION;
+CREATE TABLE `tblTodoLists` (
+	`id`	INTEGER,
+	`category_id`	INTEGER,
+	`todo_list_name`	TEXT
+);
+CREATE TABLE `tblTodoListItems` (
+	`id`	INTEGER,
+	`todo_list_id`	REAL,
+	`todo_list_item_name`	TEXT
+);
+CREATE TABLE `tblCategories` (
+	`id`	INTEGER,
+	`category_name`	TEXT
+);
+COMMIT;
